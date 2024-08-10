@@ -1,0 +1,37 @@
+#! -> bangs (Used for define bash path to run the shell script)
+
+read -> take input from console
+    -s : (silence) enter hidden character like password
+    -p : prompt will be in same line
+
+echo -> used to print the data on the console
+
+if statement syntax--
+
+if [condition]
+then
+    statements
+elif
+    statements
+else
+    statements
+fi 
+
+Types of file--
+        block special                                           character special
+1. video, audio, binary, etc.                        1. simple text file which only have characters
+2. -b                                                2. -c
+
+cat > filename : to overwrite the file
+cat >> filename : append at the end of file
+
+Using && and || operator:
+
+[ expression-1 ] && [ expression-2 ] ==  [ expression-1 -a expression-2 ] ==  [[ expression-1 && expression-2 ]]
+[ expression-1 ] || [ expression-2 ] ==  [ expression-1 -o expression-2 ] ==  [[ expression-1 || expression-2 ]]
+
+Arithmetic Operation:
+
+
+
+

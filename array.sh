@@ -9,9 +9,21 @@ echo "Hi! $first $last"
 
 echo "Enter numbers : "
 read -a arr
+
+os=("Ubuntu" "Mac" "Windows" "Kali" "Debian")
 echo "arr : [ ${arr[@]}]" # print all values of the array
 echo "Size : ${#arr[@]}" # print size
 echo "Value : ${arr[0]}"
+
+echo "OS : [${os[@]}]"
+
+#print indexes
+echo "index : [${!os[@]}]"
+
+#remove element from the array
+
+unset os[2]
+echo "OS : [${os[*]}]"
 
 ## Read value without using variable
 

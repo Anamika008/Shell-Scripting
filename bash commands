@@ -32,6 +32,107 @@ Using && and || operator:
 
 Arithmetic Operation:
 
+echo "$(( a + b ))" 
+echo "$(( a - b ))"
+echo "$(( a * b ))"
+echo "$(( a / b ))"
+
+echo $(expr $a + $b )
+echo $(( a + b ))
+echo $(expr $a \* $b )
+
+CASE Statement:
+
+case expression in
+    pattern1 )
+        statements ;;
+    pattern2 )
+        statements ;;
+    *
+        statements ;;
+    ..
+esac
 
 
+while loop:
 
+while [ condition ] 
+do
+    statement;
+    statement;
+    statement;
+done
+
+if [ -z $variable ] # used to check variable is empty or not (return true if empty otherwise false)
+
+until loop:
+
+until [ condition ] # it will execute the statements until condition is false
+do
+    statement;
+    statement;
+    statement;
+done
+
+
+FOR loop:
+
+for variable in 1 2 4 5..... N
+do 
+    statement;
+    statement;
+    statement;
+done
+
+for variable in file1 file2 file3
+do 
+    statement;
+    statement;
+    statement;
+done
+
+for variable in $(linux-or-unix-command-here)
+do 
+    statement;
+    statement;
+    statement;
+done
+
+for (( exp1; exp2; exp3 ))
+do 
+    statement;
+    statement;
+    statement;
+done
+
+
+select statement:
+
+select name in list
+do 
+    command
+    command
+    command
+done
+
+function :
+
+function fun_name() { 
+    commands
+}
+
+Or 
+
+fun_name() {
+    commands
+}
+
+fun_name() {
+    return return_value
+}
+
+According to given we need to return the value
+
+fun_name() {
+    [ condition ] && return 0 || return 1
+}
